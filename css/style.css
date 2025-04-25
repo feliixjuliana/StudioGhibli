@@ -3,12 +3,13 @@
     padding: 0;
 }
 
-body{
+#Pagina-inicial{
     height: 100vh;
     background-image:url(../imagens/My_Neighbor_Totoro.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .cabecalho{
@@ -65,6 +66,7 @@ a#link{
     justify-content: center;
     border-radius: 30px;
     backdrop-filter: blur(50px);
+    transition: 2s;
 
 }
 
@@ -76,8 +78,8 @@ a#link{
 }
 
 #titulo{
-    margin-bottom: 30px;
-    font-size: 80px;
+    margin-bottom: 80px;
+    font-size: 100px;
 
 }
 
@@ -86,11 +88,22 @@ a#link{
 
 }
 
-img{
+#imagem1{
     border-radius: 50px;
+    opacity: 0.6;
+    transition: 2s;
 }
 
+#imagem1:hover{
+    opacity: 1;
+    transition: 2s;
+}
+
+
+
+
 /*
+
 
 @media (max-width:768px){
 
@@ -108,3 +121,124 @@ img{
         font-size: 20px;
     }
 }
+*/
+
+/* Página de Filmes */
+
+#Pagina-Filmes{
+    height: 100vh;
+    background-image:url(../imagens/Totoro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+
+#busca{
+    margin: 23px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+#texto{
+    text-decoration: none;
+    font-size: 60px;
+    width: 670px;
+    height: 100px;
+    border-radius: 20px;
+    margin-right: 30px;
+    background-color: rgba(255, 255, 255, 0.707);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+#butao{
+    text-decoration: none;
+    font-size: 60px;
+    width: 370px;
+    height: 100px;
+    border-radius: 20px;
+    margin-right: 30px;
+    font-family: monospace;
+    color: green;
+    background-color: rgba(255, 255, 255, 0.707);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+#butao:hover{
+    background-color: rgba(91, 182, 91, 0.847);
+    color: white;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+/* Página de Desenvolvedora */
+
+#Pagina-Desenvolvedora{
+    height: 100vh;
+    background-image:url(../imagens/Casinha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+
+.infor2{
+    padding: 5%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+
+}
+
+#Imagem-Ghibli{
+    border-radius: 500px;
+}
+
+.texto1{
+    margin: 190px;
+    background-color: rgba(255, 255, 255, 0.41);
+    font-family: monospace;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 30px;
+    backdrop-filter: blur(50px);
+    transition: 2s;
+
+}
+
+.texto1:hover{
+    background-color: rgba(91, 182, 91, 0.659);
+    backdrop-filter: blur(50px);
+    transition: 2s;
+    color: white;
+}
+
+#resumo-academico{
+    font-size: 50px;
+
+}
+
+.redesSociais{
+    padding: 20px;
+    margin: 40px;
+}
+
+#Github{
+    margin-right: 40px;
+}
+
+#LinkedIn, #Github{
+    color: green;
+}
+
+#LinkedIn:hover, #Github:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+  
