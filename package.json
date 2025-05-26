@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "flowbite": "^3.1.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
   }
 }

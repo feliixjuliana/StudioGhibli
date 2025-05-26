@@ -1,68 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
 
 </head>
+
 <body id="Pagina-Filmes">
-    <header class="cabecalho">
-        <div id="logo">
-            
-        </div>
-        <div class="links">
-            <a href="index.html" id="link" >Início</a>
-            <a href="filmes.html" id="link">Filmes</a>
-            <a href="desenvolvedora.html" id="link">Desenvolvedora</a>
-        </div>
-    </header>
+  <header class="cabecalho">
+    <div id="logo">
 
-    <main class="FilmesMain">
-        <div id="busca">
-            <input type="text" id="texto">
-            <input type="button" value="Procurar" id="butao">
-        </div>
+    </div>
+    <div class="links">
+      <a href="index.html" id="link">Início</a>
+      <a href="filmes.html" id="link">Filmes</a>
+      <a href="desenvolvedora.html" id="link">Desenvolvedora</a>
+    </div>
+  </header>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </main>
+  <main class="FilmesMain h-[500px] overflow-y-auto p-4">
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/nausicaa.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal" id="background">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> 1984 - Nausicaä do Vale do
+            Vento </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma princesa luta para salvar seu mundo
+            pós-apocalíptico ameaçado por uma floresta tóxica e guerras.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/casteloceu.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1986 - O Castelo no Céu</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dois jovens buscam uma cidade flutuante lendária
+            enquanto fogem de piratas e agentes do governo.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/totorofilme.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1988 - Meu Amigo Totoro</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Duas irmãs fazem amizade com criaturas mágicas em
+            uma vila rural tranquila.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/tumulodevagalumes.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1988 - O Túmulo de Vagalumes</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dois irmãos lutam para sobreviver no Japão devastado pela Segunda Guerra Mundial.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/kiki.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1989 - O Serviço de Entregas
+            da Kiki</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma jovem bruxa se muda para uma cidade grande
+            para treinar seu ofício de entregadora.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/memoriasdoontem.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1991 - Memórias de Ontem</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A nostalgia de um homem revivendo suas memórias
+            de infância em uma pequena cidade.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/porcorosso.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> 1992 - Porco Rosso - O
+            último Herói Romântico</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Um piloto transformado em porco combate piratas
+            aéreos no Mediterrâneo.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/eupossoouvir.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> 1993 - Eu Posso Ouvir o
+            Oceano</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Duas adolescentes lidam com as complexidades do
+            amor e amizade durante o verão.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/abtalha.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1994 - Pompoko: A Grande
+            Batalha dos Guaxinins</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Guaxinins mágicos lutam para proteger sua casa da
+            urbanização.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/sussuros.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1995 - Sussurros do Coração
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma garota descobre sua paixão pela escrita e
+            pelo primeiro amor.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/mononoke.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> 1997 - Princesa Mononoke
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Conflito entre a natureza selvagem e a expansão
+            humana industrial.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/meusvizinhos.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">1999 - Meus Vizinhos, os
+            Yamadas</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma menina entra em um mundo mágico para salvar
+            seus pais transformados em porcos.</p>
+        </div>
+      </a>
+    </div>
+
+        <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/viagemdeChihiro.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2001 - A Viagem de Chihiro
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma aarota entra num mundo de espíritos para salvar seus pais.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/O Reino dos Gatos _ Studio Ghibli _ Polaroid….jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2002 - O Reino dos Gatos</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma garota resgata um príncipe gato e descobre um
+            reino encantado.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/castelo.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2004 - O Castelo Animado</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma jovem é amaldiçoada com idade avançada e
+            encontra refúgio em um castelo mágico ambulante.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/Tales from Earthsea.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2006 - Contos de Terramar
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Um mago jovem enfrenta perigos em um mundo de
+            magia e equilíbrio natural.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/Ponyo.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2008 - Ponyo: Uma Amizade que Veio
+            do Mar</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Um peixe dourado mágico deseja se tornar humana e
+            faz amizade com um menino.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/omundodosPequeninos.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2010 - O Mundo dos Pequeninos
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma garota ajuda seres minúsculos a salvar sua
+            casa de uma grande mudança.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/Da colina kokuriko.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2011 - Da Colina Kokuriko
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Jovens estudantes enfrentam o fechamento de sua
+            escola rural.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/vidasaovento.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2013 - Vidas ao Vento</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Biografia emocionante do pioneiro da aviação
+            japonesa Jiro Horikoshi.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/oconto.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2013 - O Conto da Princesa
+            Kaguya</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A história mítica de uma princesa celestial
+            encontrada em um bambu.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/asmemorias.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2014 - As Memórias de Marnie
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma garota solitária faz amizade misteriosa
+            durante o verão.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="container">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="../imagens/Poster - The Boy and the Heron.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal" id="background">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2023 - O Menino e a Garça
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Um menino lida com perda e transformação enquanto
+            encontra a esperança.</p>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
+
 </html>
