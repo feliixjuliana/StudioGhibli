@@ -224,3 +224,66 @@ a#link{
 }
 
 
+@media (max-width: 1024px) {
+  .infor,
+  .infor2 {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .texto,
+  .texto1 {
+    margin: 0 0 20px 0;
+    width: 90%;
+  }
+
+  #imagem1,
+  #Imagem-Ghibli {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .FilmesMain > div {
+    width: 90%;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #titulo {
+    font-size: 28px;
+  }
+
+  #resumo,
+  #resumo-academico {
+    font-size: 16px;
+  }
+
+  #link {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .texto,
+  .texto1 {
+    padding: 20px;
+  }
+
+  .FilmesMain {
+    flex-direction: column;
+  }
+
+  .FilmesMain > div {
+    width: 100%;
+  }
+}
+
